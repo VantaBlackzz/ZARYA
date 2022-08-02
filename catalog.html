@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZARYA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="header">
+        <div class="header-navbar-left">
+          <div class="icon__menu">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;
+              </a>
+              <div class="overlay-content">
+                <a href="#">О нас</a>
+                <a href="#">Сервисы</a>
+                <a href="#">Бизнесу</a>
+                <a href="#">Контакты</a>
+                <a href="#">&#9746; Раздел на тех.работах &#9746;</a>
+              </div>
+            </div>
+            <span style="font-size: 32px; cursor: pointer" onclick="openNav()"
+              >&#9776;
+            </span>
+          </div>
+          <div class="navbar_catalog">
+            <a href="#" id="text_decoration" title="Каталог">Каталог</a>
+          </div>
+        </div>
+        <div class="header-navbar-center">
+          <a href="index.html" class="logo">ZARYA</a>
+        </div>
+        <div class="header-navbar-right">
+          <div id="navbar_icons" class="icon__search">
+            <a href="#" title="Поиск">
+              <img src="/icons/icon__search.png" width="32" />
+            </a>
+          </div>
+          <div id="navbar_icons" class="icon__favorites">
+            <a href="#" title="Избранное">
+              <img src="/icons/icon__favorites.png" width="32" />
+            </a>
+          </div>
+          <div id="navbar_icons" class="icon__cart">
+            <a href="#" title="Корзина">
+              <img src="/icons/icon__cart.png" width="32" />
+            </a>
+          </div>
+          <div id="navbar_icons" class="icon__lk">
+            <button
+              onclick="document.getElementById('id01').style.display='block'"
+            >
+              Войти
+            </button>
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="container">
+                  <label for="uname"><b>Логин</b></label>
+                  <input
+                    type="text"
+                    placeholder="Ваш логин..."
+                    name="uname"
+                    required
+                  />
+                  <label for="psw"><b>Пароль</b></label>
+                  <input
+                    type="password"
+                    placeholder="Ваш пароль..."
+                    name="psw"
+                    required
+                  />
+                  <button type="submit">Войти</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Запомнить меня
+                  </label>
+                </div>
+                <div class="container" style="background-color: #f1f1f1">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn"
+                  >
+                    Отмена
+                  </button>
+                  <span class="psw">Забыли <a href="#">пароль?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-catalog">
+      <div class="card">
+        <img src="/images/body.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Боди с вырезом</h1>
+        <p class="price">799 &#8381;</p>
+
+        <p class="content_item">
+          <a
+            id="text_decoration"
+            class="active_item_favorites"
+            href="#"
+            title="Избранное"
+          >
+            <img src="/icons/icon__favorites.png" width="32" /> </a
+          ><a href="#" title="Корзина">
+            <img src="/icons/icon__cart.png" width="32" />
+          </a>
+        </p>
+      </div>
+      <div class="card">
+        <img src="/images/hudi.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Худи</h1>
+        <p class="price">1299 &#8381;</p>
+
+        <p class="content_item">
+          <a id="text_decoration" href="#" title="Избранное">
+            <img src="/icons/icon__favorites.png" width="32" /> </a
+          ><a href="#" title="Корзина">
+            <img src="/icons/icon__cart.png" width="32" />
+          </a>
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/pants.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Брюки</h1>
+        <p class="price">1299 &#8381;</p>
+        <p class="content_item">
+          <a id="text_decoration" href="#" title="Избранное">
+            <img src="/icons/icon__favorites.png" width="32" /> </a
+          ><a href="#" title="Корзина">
+            <img src="/icons/icon__cart.png" width="32" />
+          </a>
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/sweater.jpg" alt="Denim Jeans" style="width: 100%" />
+        <h1>Свитер</h1>
+        <p class="price">1199 &#8381;</p>
+        <p class="content_item">
+          <a id="text_decoration" href="#" title="Избранное">
+            <img src="/icons/icon__favorites.png" width="32" /> </a
+          ><a href="#" title="Корзина">
+            <img src="/icons/icon__cart.png" width="32" />
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="container-footer">
+      <div class="footer">
+        <div class="footer__left">
+          <p>&#9990; 555-0189</p>
+        </div>
+        <div class="footer__center">
+          <span style="font-size: 20px; cursor: pointer" onclick="openSM()"
+            >&#9776; Our socials media</span
+          >
+          <div id="SM" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSM()"
+              >&times;</a
+            >
+            <div class="menu-block">
+              <ul>
+                <li style="--i: 4">
+                  <a href="Levels of testing.html">Instagram</a>
+                </li>
+                <li style="--i: 3">
+                  <a href="Arts of testing.html">VK</a>
+                </li>
+                <li style="--i: 2"><a href="Test-design.html">Telegram</a></li>
+                <li style="--i: 1">
+                  <a href="Process of testing.html">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <p>Created by</p>
+          <h2>VantaBlackzz</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
