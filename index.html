@@ -36,6 +36,7 @@
         	<a href="index.html" class="logo">ZARYA</a>
         </div>
         <div class="header-navbar-right">
+			<!-- Toogle-->
         	<div id="navbar_icons" class="icon__search">
             	<a href="#" title="Поиск">
               		<img src="/icons/icon__search.png" width="32" />
@@ -53,23 +54,23 @@
             </div>
             <div id="navbar_icons" class="icon__lk">
             	<button onclick="document.getElementById('id01').style.display='block'">Войти</button>
-            		<div id="id01" class="modal">
-              			<form class="modal-content animate" action="/action_page.php">
-                			<div class="container">
-                  				<label for="uname"><b>Логин</b></label>
-                  					<input type="text" placeholder="Ваш логин..." name="uname" required/>
-                  						<label for="psw"><b>Пароль</b></label>
-                  					<input type="password" placeholder="Ваш пароль..." name="psw" required/>
-                  						<button type="submit">Войти</button>
-                  					<label>
-                    				<input type="checkbox" checked="checked" name="remember" />Запомнить меня</label>
-                    		</div>
-                			<div class="container" style="background-color: #f1f1f1">
+            	<div id="id01" class="modal">
+              		<form class="modal-content animate" action="/action_page.php">
+                		<div class="container">
+                  			<label for="uname"><b>Логин</b></label>
+                  				<input type="text" placeholder="Ваш логин..." name="uname" required/>
+                  					<label for="psw"><b>Пароль</b></label>
+                  				<input type="password" placeholder="Ваш пароль..." name="psw" required/>
+                  					<button type="submit">Войти</button>
+                  				<label>
+                    			<input type="checkbox" checked="checked" name="remember" />Запомнить меня</label>
+                    	</div>
+                		<div class="container" style="background-color: #f1f1f1">
                   				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
-                  					<span class="psw">Забыли <a href="#">пароль?</a></span>
-                			</div>
-              			</form>
-            		</div>
+                  				<span class="psw">Забыли <a href="#">пароль?</a></span>
+                		</div>
+              		</form>
+            	</div>
         	</div>
         </div>
     </div>
