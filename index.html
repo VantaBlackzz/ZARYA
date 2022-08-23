@@ -35,45 +35,49 @@
         <div class="header-navbar-center">
         	<a href="index.html" class="logo">ZARYA</a>
         </div>
-        <div class="header-navbar-right">
-			<!-- Toogle-->
-        	<div id="navbar_icons" class="icon__search">
-            	<a href="#" title="Поиск">
-              		<img src="/icons/icon__search.png" width="32" />
-            	</a>
-            </div>
-        <div id="navbar_icons" class="icon__favorites">
-        	<a href="#" title="Избранное">
-            	<img src="/icons/icon__favorites.png" width="32" />
-            </a>
-        </div>
-        	<div id="navbar_icons" class="icon__cart">
-            	<a href="#" title="Корзина">
-              		<img src="/icons/icon__cart.png" width="32" />
-            	</a>
-            </div>
-            <div id="navbar_icons" class="icon__lk">
-            	<button onclick="document.getElementById('id01').style.display='block'">Войти</button>
-            	<div id="id01" class="modal">
-              		<form class="modal-content animate" action="/action_page.php">
-                		<div class="container">
-                  			<label for="uname"><b>Логин</b></label>
-                  				<input type="text" placeholder="Ваш логин..." name="uname" required/>
-                  					<label for="psw"><b>Пароль</b></label>
-                  				<input type="password" placeholder="Ваш пароль..." name="psw" required/>
-                  					<button type="submit">Войти</button>
-                  				<label>
-                    			<input type="checkbox" checked="checked" name="remember" />Запомнить меня</label>
-                    	</div>
-                		<div class="container" style="background-color: #f1f1f1">
-                  				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
-                  				<span class="psw">Забыли <a href="#">пароль?</a></span>
-                		</div>
-              		</form>
-            	</div>
+        <div id="dropdown" class="header-navbar-right">
+				<!-- Toogle-->
+			<button onclick="myFunction()" class="dropbtn">Меню</button>
+			<div id="myDropdown" class="dropdown-content">
+				<div id="navbar_icons" class="icon__search">
+					<a href="#" title="Поиск">
+						<img src="/icons/icon__search.png" width="32" />
+					</a>
+				</div>
+			<div id="navbar_icons" class="icon__favorites">
+				<a href="#" title="Избранное">
+					<img src="/icons/icon__favorites.png" width="32" />
+				</a>
+			</div>
+				<div id="navbar_icons" class="icon__cart">
+					<a href="#" title="Корзина">
+						<img src="/icons/icon__cart.png" width="32" />
+					</a>
+				</div>
+				<div id="navbar_icons" class="icon__lk">
+					<button onclick="document.getElementById('id01').style.display='block'">Войти</button>
+					<div id="id01" class="modal">
+						<form class="modal-content animate" action="/action_page.php">
+							<div class="container">
+								<label for="uname"><b>Логин</b></label>
+									<input type="text" placeholder="Ваш логин..." name="uname" required/>
+										<label for="psw"><b>Пароль</b></label>
+									<input type="password" placeholder="Ваш пароль..." name="psw" required/>
+										<button type="submit">Войти</button>
+									<label>
+									<input type="checkbox" checked="checked" name="remember" />Запомнить меня</label>
+							</div>
+							<div class="container" style="background-color: #f1f1f1">
+									<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+									<span class="psw">Забыли <a href="#">пароль?</a></span>
+							</div>
+						</form>
+					</div>
+				</div>
         	</div>
-        </div>
-    </div>
+		</div>
+	</div>
+</div>
 </div>
     <div class="slideshow-container">
     	<div class="mySlides fade">
@@ -91,14 +95,14 @@
     </div>
     <div class="row__info_ab">
     	<div class="row__info_col_a">
-        	<img src="/images/row_item_hudi.jpeg" alt="Notebook" style="height: 400px"/>
+        	<img src="/images/row_item_hudi.jpeg" alt="Notebook" style="width: 100%"/>
         	<div class="row__info_content_a">
             	<h1>&nbsp;&nbsp;&raquo;&nbsp;Как подобрать худи?</h1>
           		<p>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Отвечает главный дизайнер Pull& Hear</p>
-        	</div>
+			</div>
         </div>
         <div class="row__info_col_b">
-        	<img src="/images/row_item_garderob.jpeg" alt="Notebook" style="height: 400px"/>
+        	<img src="/images/row_item_garderob.jpeg" alt="Notebook" style="width: 100%"/>
         	<div class="row__info_content_b">
           		<h1>&nbsp;&nbsp;&raquo;&nbsp;Твой гардероб</h1>
           		<p>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;&nbsp;Советы от наших покупателей</p>
